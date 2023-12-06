@@ -1,1 +1,3 @@
-# 2PJAVA_Konyvtar
+#### Fűrész Bence
+#### Katona Valentin
+#### Páros munka: JAVA_Konyvtar

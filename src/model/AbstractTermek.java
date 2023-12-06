@@ -1,13 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
-/**
- *
- * @author FűrészBence(SZF_2022
- */
-public class AbstractTermek {
-    
+import java.util.UUID;
+
+public abstract class AbstractTermek {
+    private UUID uuid; 
+
+    private String nev;
+    private double ar;
+
+    public AbstractTermek(String nev, double ar) {
+        this.uuid = UUID.randomUUID();
+        this.nev = nev;
+        this.ar = ar;
+    }
+
+    public UUID getUuid() {
+        return uuid;
+    }
+
+    public String getNev() {
+        return nev;
+    }
+
+    public double getAr() {
+        return ar;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractTermek{" +
+                "uuid=" + uuid +
+                ", nev='" + nev + '\'' +
+                ", ar=" + ar +
+                '}';
+    }
 }

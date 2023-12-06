@@ -1,5 +1,6 @@
 package model;
 
-public interface class Kolcsonozheto {
-    
+
+public interface Kolcsonozheto {
+    boolean isKolcsonozheto();
 }

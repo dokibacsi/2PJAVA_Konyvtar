@@ -1,13 +1,41 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
-/**
- *
- * @author FűrészBence(SZF_2022
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Konyvtar {
     
+    
+    List<AbstractTermek> termekek = new ArrayList<>();
+     
+    private void run(){
+        felvesz();
+	kolcsonoz();
+	termekek();
+    }
+
+    private void felvesz(){
+        if(termekek.getNev().equals("Gumikacsa")){
+            termekek.add(new KolcsonozhetoGumikacsa());
+        }
+        else if(termekek.getNev().equals("Auto")){
+            termekek.add(new NemKolcsonozhetoAuto());
+        }
+    }
+
+    private void termekek() {
+       
+    }
+
+    private void kolcsonoz(Kolcsonozheto kolcsonoz) {
+        if(kolcsonoz.isKolcsonozheto()){
+            System.out.println("sss");
+        }
+        else{
+            System.out.println("aaa");
+        }
+    }
+        
+        
+        
 }
